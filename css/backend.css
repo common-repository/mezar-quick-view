@@ -1,0 +1,105 @@
+input[type=checkbox] {
+    border-radius: 0px;
+}
+
+#mezar_qv_right_icon_container input[type=radio], 
+#mezar_qv_left_icon_container input[type=radio] {
+    border: none;
+    background: none;
+    color: transparent;
+    box-shadow: none;
+    position: absolute;
+}
+
+#mezar_qv_right_icon_container input[type=radio]:checked::before,
+#mezar_qv_left_icon_container input[type=radio]:checked::before {
+    background-color: transparent;
+}
+
+#mezar_qv_right_icon_container input[type=radio]:focus,
+#mezar_qv_left_icon_container input[type=radio]:focus {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.mezar_qv_right_icon_container,
+.mezar_qv_left_icon_container {
+    display: flex;
+}
+
+.mezar_qv_right_icon_container label,
+.mezar_qv_left_icon_container label {
+    display: flex;
+}
+
+.mezar_qv_right_icon_container p,
+.mezar_qv_left_icon_container p {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+.mezar_qv_right_icon_container p:hover,
+.mezar_qv_left_icon_container p:hover {
+    border-color: #00bfff;
+}
+
+#mezar_qv_right_icon_container input[type=radio]:checked + p,
+#mezar_qv_left_icon_container input[type=radio]:checked + p {
+    background-color: #00bfff;
+    border: 1px solid #00bfff;
+}
+
+.mezar_qv_right_icon_container p i,
+.mezar_qv_left_icon_container p i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mezar_qv_element_to_show_container span {
+    margin-right: 20px;
+}
+
+.mezar_qv_backend_form h2 {
+    /*background-color: deepskyblue;*/
+    padding: 23px 20px;
+    font-size: large;
+    /*border-left: 2px solid;*/
+    margin-bottom: 0;
+}
+
+.mezar_qv_backend_form .form-table th {
+    padding: 41px 10px 20px 30px;
+}
+
+.mezar_qv_backend_form .form-table td {
+    padding: 32px 10px;
+}
+
+.mezar_qv_backend_form .form-table {
+    background-color: white;
+}
+
+.mezar_qv_backend_form .helper {
+    margin-left: 10px;
+    font-weight: 100;
+    
+    opacity: .8;
+}
+
+.mezar_qv_backend_form .description {
+    margin-top: 4px;
+    font-size: small;
+    margin-bottom: 0;
+    opacity: .8;
+    margin-top: 3px;
+}
+
+
+
